@@ -60,6 +60,7 @@ exports[`<ProgressiveImage> Component with thumbnailSource 1`] = `
   <Image
     blurRadius={1}
     onLoad={[Function]}
+    resizeMethod="scale"
     source={
       Object {
         "uri": "https://images.pexels.com/photos/6044441/pexels-photo-6044441.jpeg",
@@ -76,6 +77,7 @@ exports[`<ProgressiveImage> Component with thumbnailSource 1`] = `
   />
   <Image
     onLoad={[Function]}
+    resizeMethod="scale"
     source={
       Object {
         "uri": "https://images.pexels.com/photos/6044441/pexels-photo-6044441.jpeg",

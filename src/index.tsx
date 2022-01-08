@@ -1,5 +1,5 @@
 import React, { useRef, memo } from 'react';
-import { View, StyleSheet, Animated, ImageSourcePropType, ImageStyle, ViewStyle } from 'react-native';
+import { View, StyleSheet, Animated, ImageSourcePropType, ImageStyle, ViewStyle, ImageProps } from 'react-native';
 interface ProgressiveImageStyle {
   imageOverlay: ImageStyle;
   container: ViewStyle;
@@ -18,7 +18,7 @@ const styles = StyleSheet.create<ProgressiveImageStyle>({
   },
 });
 
-export interface ProgressiveImageProps {
+export interface ProgressiveImageProps extends ImageProps {
   source: ImageSourcePropType;
   thumbnailSource?: ImageSourcePropType;
   style?: ImageStyle;
