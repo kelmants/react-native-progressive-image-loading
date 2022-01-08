@@ -11,11 +11,14 @@ npm install react-native-progressive-image-loading
 ## Usage
 
 ```js
-import { multiply } from "react-native-progressive-image-loading";
+import ProgressiveImage from "react-native-progressive-image-loading";
 
-// ...
-
-const result = await multiply(3, 7);
+      <ProgressiveImage
+        style={styles.box}
+        source={{ uri: 'https://images.pexels.com/photos/6044441/pexels-photo-6044441.jpeg' }}
+        thumbnailSource={{ uri: 'https://images.pexels.com/photos/6044441/pexels-photo-6044441.jpeg' }}
+      />
+      <ProgressiveImage style={styles.box} source={{ uri: 'https://images.pexels.com/photos/6044441/pexels-photo-6044441.jpeg' }} />
 ```
 
 ## Contributing
