@@ -1,0 +1,99 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<ProgressiveImage> Component with default values 1`] = `
+<View
+  style={
+    Object {
+      "backgroundColor": "#e1e4e8",
+    }
+  }
+>
+  <Image
+    blurRadius={1}
+    onLoad={[Function]}
+    source={
+      Object {
+        "uri": "",
+      }
+    }
+    style={
+      Object {
+        "height": 200,
+        "marginVertical": 20,
+        "opacity": 0,
+        "width": 200,
+      }
+    }
+  />
+  <Image
+    onLoad={[Function]}
+    source={
+      Object {
+        "uri": "https://images.pexels.com/photos/6044441/pexels-photo-6044441.jpeg",
+      }
+    }
+    style={
+      Object {
+        "bottom": 0,
+        "height": 200,
+        "left": 0,
+        "marginVertical": 20,
+        "opacity": 0,
+        "position": "absolute",
+        "right": 0,
+        "top": 0,
+        "width": 200,
+      }
+    }
+  />
+</View>
+`;
+
+exports[`<ProgressiveImage> Component with thumbnailSource 1`] = `
+<View
+  style={
+    Object {
+      "backgroundColor": "#e1e4e8",
+    }
+  }
+>
+  <Image
+    blurRadius={1}
+    onLoad={[Function]}
+    source={
+      Object {
+        "uri": "https://images.pexels.com/photos/6044441/pexels-photo-6044441.jpeg",
+      }
+    }
+    style={
+      Object {
+        "height": 200,
+        "marginVertical": 20,
+        "opacity": 0,
+        "width": 200,
+      }
+    }
+  />
+  <Image
+    onLoad={[Function]}
+    source={
+      Object {
+        "uri": "https://images.pexels.com/photos/6044441/pexels-photo-6044441.jpeg",
+      }
+    }
+    style={
+      Object {
+        "bottom": 0,
+        "height": 200,
+        "left": 0,
+        "marginVertical": 20,
+        "opacity": 0,
+        "position": "absolute",
+        "right": 0,
+        "top": 0,
+        "width": 200,
+      }
+    }
+  />
+</View>
+`;
