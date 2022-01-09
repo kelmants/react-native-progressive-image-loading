@@ -1,6 +1,6 @@
 {
   "name": "react-native-progressive-image-loading",
-  "version": "0.2.2",
+  "version": "0.2.3",
   "description": "Image component with the progressive image when it is loading",
   "main": "lib/commonjs/index",
   "module": "lib/module/index",
