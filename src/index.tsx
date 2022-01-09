@@ -22,9 +22,10 @@ export interface ProgressiveImageProps extends ImageProps {
   source: ImageSourcePropType;
   thumbnailSource?: ImageSourcePropType;
   style?: ImageStyle;
+  containerStyle?: ViewStyle;
 }
 
-function ProgressiveImage({ thumbnailSource, source, style, ...props }: ProgressiveImageProps) {
+function ProgressiveImage({ thumbnailSource, source, style, containerStyle, ...props }: ProgressiveImageProps) {
   const thumbnailAnimated = useRef(new Animated.Value(0)).current;
 
   const imageAnimated = useRef(new Animated.Value(0)).current;
@@ -44,8 +45,8 @@ function ProgressiveImage({ thumbnailSource, source, style, ...props }: Progress
   };
 
   return (
-    <View style={styles.container}>
-      {source && <Animated.Image {...props} source={thumbnailSource || { uri: '' }} style={StyleSheet.flatten([style, { opacity: thumbnailAnimated }])} onLoad={handleThumbnailLoad} blurRadius={1} />}
+    <View style={StyleSheet.flatten([styles.container, containerStyle])}>
+      {thumbnailSource && <Animated.Image {...props} source={thumbnailSource} style={StyleSheet.flatten([style, { opacity: thumbnailAnimated }])} onLoad={handleThumbnailLoad} blurRadius={1} />}
       <Animated.Image {...props} source={source} style={StyleSheet.flatten([styles.imageOverlay, { opacity: imageAnimated }, style])} onLoad={handleImageLoad} />
     </View>
   );
